@@ -1,6 +1,6 @@
-# GCDA_Tutorial_2025
+# GCDA_Tutorial_2026
 
-This repository is for the Genomic & Clinical Data Analysis course for the Fall 2025 semester. 
+This repository is for the Genomic & Clinical Data Analysis course for the Spring 2026 semester. 
 
 Processes and codes for various practice sessions will be shared here. Please note, the schedule is subject to change.
 
