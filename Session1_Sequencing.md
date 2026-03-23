@@ -1,18 +1,10 @@
-# Practice Session #1: Sequencing (Sep. 16, 2025)
+# Practice Session #1: Sequencing (Mar. 23, 2025)
 
 In this session, we will learn how to convert raw unmapped read files (`FASTQ`) to analysis-ready files (`VCF`). \
 The overall process in this session is mainly based on the [GATK Best Practice](https://gatk.broadinstitute.org/hc/en-us/categories/360002302312-Getting-Started). \
-This document was created on Sep. 16, 2025 and the following contents were tested on local WSL (Ubuntu 22.04.1 LTS) + GSDS Cluster.
-### 0. Installing Linux and Mamba(Anaconda) in Windows
-Using Linux has become easy in Windows with WSL. \
-To start, launch windows powershell in administration mode and run following. 
-``` 
-wsl --install
-```
-After system restart, linux can be run from terminal app. (Note that hard drive is mounted under /mnt)
-
+This document was created on Sep. 16, 2025 and the following contents were tested on GSDS Cluster.
+### 0. Installing Conda(Anaconda)
 find latest release for Linux-x86 and copy link from https://www.anaconda.com/products/distribution
-
 install anaconda by following instructions
 
 ### Access Leelab computational server via personal account
@@ -22,14 +14,12 @@ Your ID is gcda_<xxx>, last three digits of student ID
 ssh gcda_<xxx>@147.47.200.131 -p 22555
 ID: gcda_<xxx>
 PW (default): gcda_<xxx>
-
 ```
 #### Installing mamba for faster conda usage
 Follow the instruction from https://github.com/conda-forge/miniforge 
 
 ```
-bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/conda"
-conda/bin/conda init
+bash Miniforge3-Linux-x86_64.sh
 ```
 
 ### Use designated node for computation: leelabsg11
@@ -49,7 +39,9 @@ All files and tools are included in '~/1_sequencing/' folder
 # conda create -n SEQ samtools bwa -c anaconda -c bioconda
 mamba create -n SEQ samtools bwa bcftools -c anaconda -c bioconda
 
-conda activate SEQ
+mamba activate SEQ
+
+mamba create -n SEQ --clone /data/home/gcda_001/miniforge3/envs/SEQ
 
 # Install jdk 17 version (Required after picard 3.0.0)
 ## wget https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
@@ -59,7 +51,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 alias java17="~/jdk-17.0.2/bin/java"
 
 # install gatk4 
-conda install gatk4 -c bioconda
 mamba install gatk4 -c bioconda
 # Download Picard (Find Latest Release: https://github.com/broadinstitute/picard/releases/latest)
 ## cd ~/1_sequencing/utils
