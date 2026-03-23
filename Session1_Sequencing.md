@@ -41,7 +41,7 @@ mamba create -n SEQ samtools bwa bcftools -c anaconda -c bioconda
 
 mamba activate SEQ
 
-mamba create -n SEQ --clone /data/home/gcda_001/miniforge3/envs/SEQ
+mamba create -n SEQ --clone ~/templete_env
 
 # Install jdk 17 version (Required after picard 3.0.0)
 ## wget https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
