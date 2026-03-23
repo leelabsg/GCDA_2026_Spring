@@ -15,6 +15,8 @@ ssh gcda_<xxx>@147.47.200.131 -p 22555
 ID: gcda_<xxx>
 PW (default): gcda_<xxx>
 ```
+## Caution: Don't use login in node
+
 #### Installing mamba for faster conda usage
 Follow the instruction from https://github.com/conda-forge/miniforge 
 
