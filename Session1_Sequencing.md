@@ -41,9 +41,10 @@ All files and tools are included in '~/1_sequencing/' folder
 # conda create -n SEQ samtools bwa -c anaconda -c bioconda
 mamba create -n SEQ samtools bwa bcftools -c anaconda -c bioconda
 
-mamba activate SEQ
+# install gatk4 
+mamba install gatk4 -c bioconda
 
-mamba create -n SEQ --clone ~/templete_env
+mamba activate SEQ
 
 # Install jdk 17 version (Required after picard 3.0.0)
 ## wget https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
@@ -52,8 +53,7 @@ export JAVA_HOME=$JAVA_HOME/:~/jdk-17.0.2/
 export PATH=$JAVA_HOME/bin:$PATH
 alias java17="~/jdk-17.0.2/bin/java"
 
-# install gatk4 
-mamba install gatk4 -c bioconda
+
 # Download Picard (Find Latest Release: https://github.com/broadinstitute/picard/releases/latest)
 ## cd ~/1_sequencing/utils
 ## wget https://github.com/broadinstitute/picard/releases/download/3.0.0/picard.jar
