@@ -101,7 +101,7 @@ head(chd_out_dat)
 ```
 chd_out_dat2 <- read_outcome_data(
     snps = bmi_exp_dat$SNP,
-    filename = "/data/GCDA_2025_2/4_MR/26343387-GCST003116-EFO_0000378-build37.f.tsv",
+    filename = "/data/GCDA_2026/4_MR/26343387-GCST003116-EFO_0000378-build37.f.tsv",
     sep = "\t",
     snp_col = "variant_id",
     beta_col = "beta",
