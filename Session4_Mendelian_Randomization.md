@@ -114,7 +114,6 @@ chd_out_dat2 <- read_outcome_data(
     pval_col = "p_value",
     samplesize_col = "nstudy"
 )
-head(chd_out_dat2)
 ```
 
 
