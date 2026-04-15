@@ -6,7 +6,7 @@ The data we are going to use are already preprocessed or downloaded.
 
 ### 1. Log in to your account and access the desired compute node
 ``` 
-ssh YOURID@147.47.200.131 -p 22555
+ssh gcda_<xxx>@147.47.200.131 -p 22555
 ```
 ``` 
 ssh leelabsg11
