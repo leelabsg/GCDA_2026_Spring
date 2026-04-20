@@ -189,3 +189,7 @@ ggplot2::ggsave(p4[[1]], file = <FILE_PATH>, width = 7, height = 7)
 
 
 
+### 7. Further readings
+
+[Guidelines for performing Mendelian randomization investigations](https://wellcomeopenresearch.org/articles/4-186/v3)
+
