@@ -39,7 +39,7 @@ nohup python PRScs/PRScs.py \
 --bim_prefix=data/plink/sample \
 --sst_file=data/summary_stat/sumstats_prscs.txt \
 --n_gwas=177618 \
---out_dir=result/prscs > result/nohup.out &
+--out_dir=result/prscs > result/nohup.out 2>&1 &
 
 ``` 
 
