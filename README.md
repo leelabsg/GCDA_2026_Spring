@@ -29,7 +29,7 @@ Processes and codes for various practice sessions will be shared here. Please no
 **Date:** **June 8,  2026**   
 **TA:** Soungmun Kim ([email](mailto:soungmun@snu.ac.kr))
 
-### [Session 7 - Medical Image Data Analysis (CNN)]
+### [Session 7 - Medical Image Data Analysis (CNN)](Session7_Medical_Image_Data_Analysis)
 **Date:** **June 8, 2026**    
 **TA:** Wonyoung Jang ([email](mailto:jwy4888@snu.ac.kr))
 
